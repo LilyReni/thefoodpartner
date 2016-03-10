@@ -1,0 +1,306 @@
+
+/*
+#parallelogram { 
+width: 150px; 
+height: 100px; 
+margin-left:20px; 
+-webkit-transform: skew(20deg); 
+-moz-transform: skew(20deg); 
+-o-transform: skew(20deg); 
+background: red; 
+} 
+
+*/
+
+.v {
+   
+    margin-left: 10px;
+}
+
+
+#title {
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 600;
+	line-height: 26.4px;
+    
+    color: midnightblue;
+}
+
+p {
+    padding: inherit;
+    
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+    
+    
+}
+
+
+.graph {
+    position: relative;
+    width: 800px;
+    height: 650px;
+    
+    top: 30px;
+    /*background-color: black;*/
+    /* Middle origin: left: 500px, top: 250px */
+}
+
+
+
+#x_axis_s, #x_axis_d, #x_axis_ex, #y_axis {
+    position: absolute;
+    background-color: black;
+}
+
+#las_s, #las_d, #inf_tar, #fixed_ex {
+    position: absolute;
+    background-color: red;
+}
+
+#ad, #sas, #cip {
+    position: absolute;
+    background-color: cornflowerblue;
+    
+    width: 3.5px; 
+    height: 220px; 
+    margin-left:20px; 
+    -webkit-transform: skew(40deg); 
+    -moz-transform: skew(40deg); 
+    -o-transform: skew(40deg); 
+    
+    left: 650px;
+    top: 30px;
+    /* position of the left right corner*/
+        
+}
+
+#sas {
+    top: 280px;
+    
+    -webkit-transform: skew(-40deg); 
+    -moz-transform: skew(-40deg); 
+    -o-transform: skew(-40deg);
+}
+
+#cip {
+    left: 350px;
+    
+    -webkit-transform: skew(-40deg); 
+    -moz-transform: skew(-40deg); 
+    -o-transform: skew(-40deg);
+}
+
+
+#x_axis_s, #x_axis_d, #x_axis_ex {
+    width: 300px;
+    height: 2px;   
+}
+
+#x_axis_s {
+    left: 500px;
+    top: 500px;
+}
+
+#x_axis_d  {
+    left: 500px;
+    top: 250px;
+}
+
+#x_axis_ex {
+    left: 200px;
+    top: 250px;
+}
+
+
+#y_axis {
+    width: 2px;
+    height: 500px;
+    
+    left: 500px; 
+}
+
+#las_s, #las_d {
+    width: 2px;
+    height: 220px;
+    
+    left: 700px;
+}
+
+#las_s {
+    top: 280px;
+}
+
+#las_d {
+    top: 30px;
+}
+
+#inf_tar {
+    width: 300px;
+    height: 2px;
+    
+    left: 500px;
+    top: 450px;
+}
+
+
+
+.select {
+    box-shadow: 0 4px 8px 0 rgba(0, 100, 200, 0.5), 0 6px 20px 0 rgba(0, 100, 200, 0.48);
+}
+
+
+#y_dash, #r_dash, #ex_dash, #s_dash {
+    position: absolute;
+    
+    border-style: dotted;
+    border-color: dimgrey;
+    border-width: 1px;
+    /*background-color: aquamarine;*/
+}
+
+#y_dash {
+    width: .2px;
+    height: 422px;
+    
+    left: 620px;
+    top: 79px;
+}
+
+#r_dash {
+    width: 198px;
+    height: .2px;
+    
+    left: 421px;
+    top: 79px;
+}
+
+#ex_dash {
+    width: .2px;
+    height: 171px;
+    
+    left: 421px;
+    top: 79px;
+}
+
+#s_dash {
+    width: 120px;
+    height: .2px;
+    
+    left: 500px;
+    top: 450px;
+    
+    display: none;
+}
+
+#fixed_ex {
+    width: 2px;
+    height: 220px;
+    
+    top: 30px;
+
+    display: none;
+}
+
+
+#img_ad, #img_cip, #img_ex, #img_las, #img_pi, #img_sas, #img_y, #img_y_2, #img_y0, #img_y0_2, #img_yp, #img_yp_2, #img_r, #img_pi_tar, #img_gap, #img_arr_l, #img_arr_r, #img_pt {
+    position: absolute;
+}
+
+#img_y {
+    top: 240px;
+    left: 820px;
+}
+
+#img_y_2 {
+    top: 490px;
+    left: 820px;
+}
+
+#img_yp {
+    top: 260px;
+    left: 690px;
+}
+
+#img_yp_2 {
+    top: 510px;
+    left: 690px;
+}
+
+#img_pi {
+    top: 260px;
+    left: 470px;
+}
+
+#img_r {
+    top: 40px;
+    left: 470px;
+}
+
+#img_ex {
+    top: 260px;
+    left: 170px;
+}
+
+#img_las {
+    top: 10px;
+    left: 690px;
+}
+
+#img_sas {
+    top: 280px;
+    left: 750px;
+}
+
+#img_ad {
+    top: 220px;
+    left: 750px;
+}
+
+#img_cip {
+    top: 50px;
+    left: 280px;
+}
+
+#img_y0 {
+    top: 260px;
+    left: 620px;
+}
+
+#img_y0_2 {
+    top: 510px;
+    left: 620px;
+}
+
+#img_pi_tar {
+    top: 435px;
+    left: 410px;
+}
+
+#img_gap {
+    top: 470px;
+    left: 645px;
+}
+
+#img_arr_l {
+    top: 470px;
+    left: 620px;
+}
+
+#img_arr_r {
+    top: 470.2px;
+    left: 675px;
+}
+
+#img_pt {
+    left: 455px;
+    
+    display: none;
+}
